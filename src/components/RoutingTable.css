@@ -1,0 +1,85 @@
+.routing-table {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  animation: fade-in 0.5s ease-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.routing-table h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  color: #58a6ff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.table-subtitle {
+  margin: 0 0 1rem 0;
+  color: #8b949e;
+  font-size: 0.9rem;
+}
+
+.routing-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #0d1117;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.routing-table thead {
+  background: #21262d;
+}
+
+.routing-table th {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #58a6ff;
+  border-bottom: 1px solid #30363d;
+}
+
+.routing-table td {
+  padding: 0.75rem 1rem;
+  color: #8b949e;
+  border-bottom: 1px solid #21262d;
+}
+
+.routing-table tbody tr {
+  transition: background 0.2s, transform 0.2s;
+}
+
+.routing-table tbody tr:hover {
+  background-color: #21262d;
+  transform: translateX(2px);
+}
+
+.routing-table tbody tr.active-row {
+  background: rgba(88, 166, 255, 0.1);
+  border-left: 3px solid #58a6ff;
+}
+
+.routing-table tbody tr.active-row td {
+  color: #58a6ff;
+  font-weight: 600;
+}
+
+.no-data {
+  text-align: center;
+  color: #8b949e;
+  padding: 2rem;
+  font-style: italic;
+}
